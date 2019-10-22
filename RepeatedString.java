@@ -1,4 +1,4 @@
-//Problem Statement:https://www.hackerrank.com/challenges/repeated-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+//Problem Statement:https://www.hackerrank.com/challenges/repeated-string/problem*/
 public class RepeatedString {
     public static void main(String args[]){
         System.out.println(repeatedString("aba",10));

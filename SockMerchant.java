@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*Problem Statement:
-https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup*/
+https://www.hackerrank.com/challenges/sock-merchant/problem*/
 public class SockMerchant {
 
     public static void main(String[]args){
