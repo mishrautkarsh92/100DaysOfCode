@@ -1,0 +1,19 @@
+class Solution {
+    public int reverse(int num) {
+       int reverse = 0;
+		int x = num;
+		if (num >= Integer.MAX_VALUE || num <= Integer.MIN_VALUE) {
+			reverse = 0;
+		} else {
+			while (x != 0) {
+				int r = x % 10;
+				reverse = reverse * 10 + r;
+				x /= 10;
+			}
+		}
+        }
+		return reverse;
+    }
+}
+
+//https://leetcode.com/problems/reverse-integer/
