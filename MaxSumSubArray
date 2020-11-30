@@ -1,0 +1,23 @@
+class Solution {
+    public int maxSubArray(int[] nums) {
+        if(nums.length==1){
+            return nums[0];
+        }
+        int sum_now=0;
+        int sum_so_far=Integer.MIN_VALUE;
+        int i=0;
+        while(i<nums.length){
+            sum_now += nums[i];
+            if(sum_now>sum_so_far){
+                sum_so_far = sum_now;
+            }
+            if(sum_now<0){
+                sum_now = 0;
+            }
+            i++;
+        }
+        return sum_so_far;
+    }
+}
+
+//https://leetcode.com/problems/maximum-subarray/
