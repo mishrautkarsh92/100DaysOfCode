@@ -1,0 +1,26 @@
+class Solution {
+    public boolean isHappy(int num) {
+       int first ,second;
+		first=num ;
+		second = num;
+		do {
+			first = getSumOfDigitSqure(first);
+			second = getSumOfDigitSqure(second);
+			second = getSumOfDigitSqure(second);
+			if(second==1)
+				return true;
+		}while(first!=second);
+		return false;
+    }
+    
+    public int getSumOfDigitSqure(int n) {
+		int sum = 0;
+		while(n>0) {
+			int rem = n%10;
+			sum+=rem*rem;
+			n/=10;
+		}
+		return sum;
+	}
+}
+//https://leetcode.com/problems/happy-number/
