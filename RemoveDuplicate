@@ -1,0 +1,13 @@
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        LinkedHashSet<Integer> set = new LinkedHashSet<Integer>();
+		for(int i:nums)
+			set.add(i);
+        Iterator<Integer> itr = set.iterator();
+		for(int i=0;i<set.size();i++) {
+			nums[i] = itr.next();
+		}
+		return set.size();
+    }
+}
+//https://leetcode.com/problems/remove-duplicates-from-sorted-array/
