@@ -1,0 +1,13 @@
+class Solution {
+    public boolean isPalindrome(String input) {
+        String reverse = "";
+		String original = input.replaceAll("[^a-zA-Z0-9]", "");
+		System.out.println(original);
+		for(int i = original.length()-1;i>=0;i--) {
+			reverse = reverse+original.charAt(i);
+		}
+		System.out.println(reverse);
+		return original.equalsIgnoreCase(reverse);
+    }
+}
+//https://leetcode.com/problems/valid-palindrome/
