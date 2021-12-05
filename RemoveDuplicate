@@ -10,4 +10,28 @@ class Solution {
 		return set.size();
     }
 }
+
+class Solution {
+    public int removeDuplicates(int[] nums) {
+       int i=0,j=1;
+        int maxLen = nums.length;
+        while(j<maxLen){
+           while(j<maxLen && nums[i]==nums[j]){
+               j++;
+           }
+            if(j<maxLen){
+                i++;
+                nums[i]=nums[j];
+                j++;
+            }else{
+                int k=i+1;
+                while(k<j){
+                    nums[k]=-1;
+                    k++;
+                }
+            }
+        }
+        return i+1;
+    }
+}
 //https://leetcode.com/problems/remove-duplicates-from-sorted-array/
